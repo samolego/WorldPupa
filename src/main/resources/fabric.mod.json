@@ -6,7 +6,7 @@
   "name": "World Pupa",
   "description": "World migrator - from Bukkit/Spigot/Paper to Fabric",
   "authors": [
-    "Me!"
+    "samo_lego"
   ],
   "contact": {
     "sources": "https://github.com/samolego/WorldPupa"
@@ -16,14 +16,13 @@
 
   "environment": "server",
   "entrypoints": {
-    "main": [
+    "server": [
       "org.samo_lego.worldpupa.WorldPupa"
     ]
   },
 
   "depends": {
     "fabricloader": ">=0.7.2",
-    "fabric": "*",
     "minecraft": "1.15.x"
   },
   "suggests": {

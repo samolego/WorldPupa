@@ -37,18 +37,18 @@ public class WorldPupa implements DedicatedServerModInitializer {
 				if (nether.renameTo(dimMinusOne)) {
 					LOGGER.info("[WorldPupa] Successfully converted the nether.");
 					// Cleaning what's left behind
-					FileUtils.forceDelete(nether);
+					FileUtils.forceDelete(nether.getParentFile());
 				}
 				else
 					LOGGER.error("[WorldPupa] Error moving nether directory!");
 				// Converting the End
 				if (theEnd.renameTo(dimOne)) {
 					LOGGER.info("[WorldPupa] Successfully converted the end.");
-					FileUtils.forceDelete(theEnd);
+					FileUtils.forceDelete(theEnd.getParentFile());
 				}
 				else
 					LOGGER.error("[WorldPupa] Error moving end directory!");
-				LOGGER.info("[WorldPupa] That's it. Feel free to disable the mod on the next run.");
+				LOGGER.info("[WorldPupa] That's it. Please disable the mod on the next run.");
 			}
 		} catch (FileNotFoundException e) {
 			LOGGER.error("[WorldPupa] File not found! ", e);
