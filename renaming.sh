@@ -9,6 +9,7 @@ rm *dev*
 cd ../../
 
 # Moving older builds to the build/libs folder (from dev-builds branch)
+git pull origin dev-builds
 git checkout dev-builds *.jar
 mv *.jar ./build/libs
 
