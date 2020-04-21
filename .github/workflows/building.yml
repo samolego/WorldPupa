@@ -36,6 +36,6 @@ jobs:
       with:
         build_dir: build/libs
         target_branch: dev-builds
-        keep_history: true
+        keep_history: false
       env:
         GITHUB_PAT: ${{ secrets.pat }}
