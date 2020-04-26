@@ -9,7 +9,7 @@ rm *dev*
 cd ../../
 
 # Moving older builds to the build/libs folder (from dev-builds branch)
-git checkout --track origin/dev-builds *.jar
+git checkout origin/dev-builds *.jar
 mv *.jar ./build/libs
 
 # Cleaning up old dev builds, if there are more than 10
