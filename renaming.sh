@@ -17,7 +17,8 @@ cd ./build/libs
 
 echo "Build is going to be renamed: $projectId-$version-devbuild_$GITHUB_RUN_NUMBER-MC_$mcVersion"
 # Renaming the dev build
-buildName = "$projectId-$version-devbuild_$GITHUB_RUN_NUMBER-MC_$mcVersion.jar"
+buildName="$projectId-$version-devbuild_$GITHUB_RUN_NUMBER-MC_$mcVersion.jar"
+
 mv "$projectId-$version.jar" "$buildName.jar"
 
 echo "::set-env name=BUILDNAME::$buildName"
