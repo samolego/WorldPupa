@@ -35,4 +35,5 @@ jobs:
     - name: Uploading artifacts
       uses: actions/upload-artifact@v2
       with:	
-        path: build/libs/*.jar
+        name: ${{ env.BUILDNAME }}.jar
+        path: build/libs/${{ env.BUILDNAME }}.jar
